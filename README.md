@@ -46,7 +46,8 @@ OPENAI_API_KEY=<your_openai_key>
 ## Development
 
 ```bash
-# From project root\ npm run dev
+# From project root\ 
+npm run dev
 ```
 
 This will start:
