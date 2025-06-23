@@ -8,8 +8,8 @@ export default function LeadSummary({ data }) {
         <div className="mt-6 space-y-4 p-4 border rounded-lg bg-white shadow">
             <h2 className="text-xl font-semibold">Generated Email</h2>
             <Textarea
-                value={editedEmail}
-                onChange={e => setEditedEmail(e.target.value)}
+                value={data.email}
+                onChange={e => setEditedEmail(data.email)}
                 rows={6}
                 className="w-full"
             />
