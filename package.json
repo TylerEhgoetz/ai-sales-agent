@@ -1,0 +1,26 @@
+{
+  "name": "ai-sales-agent",
+  "version": "1.0.0",
+  "description": "Lightweight AI sales agent integrating with HubSpot CRM and OpenAI",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js --watch server",
+    "client": "npm start --prefix client",
+    "debug": "nodemon --inspect-brk server/index.js --watch server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "openai": "^5.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
