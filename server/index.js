@@ -1,10 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const leadRoutes = require('./routes/leadRoutes');
+const leadRouter = require('./routes/leads');
 
 const app = express();
 app.use(cors(), express.json());
-app.use('/api/leads', leadRoutes);
+app.use('/api/leads', leadRouter);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
