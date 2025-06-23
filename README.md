@@ -22,6 +22,9 @@ Lightweight AI‑powered sales agent integrating with HubSpot CRM and OpenAI to 
     - crm.objects.deals.read
     - crm.objects.contacts.read
 - OpenAI API key and funded account
+- add properties to clients in HubSpot:
+    - `email_history_summary` (text)
+    - `next_steps_ideas` (text)
 
 ## Installation
 ```bash
